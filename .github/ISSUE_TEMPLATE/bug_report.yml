@@ -1,0 +1,35 @@
+name: Bug report
+description: Something does not work as described in the README.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command and output
+      description: The command you ran. The output of the same command with `-DryRun` helps a lot.
+      render: text
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2
+    validations:
+      required: true
+  - type: input
+    id: pwsh
+    attributes:
+      label: PowerShell version
+      description: Output of `$PSVersionTable.PSVersion`
+    validations:
+      required: true
+  - type: input
+    id: wt
+    attributes:
+      label: Windows Terminal version
