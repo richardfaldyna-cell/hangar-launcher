@@ -491,7 +491,7 @@ $list.Add_MouseDoubleClick({ Invoke-Action 'tab' })
 # the search box gets them, so the selection can be driven while typing. Letters, on
 # the other hand, are let through, so focus can stay in the search box for good.
 $window.Add_PreviewKeyDown({
-    param($sender, $e)
+    param($eventSource, $e)
     # Explicit comparison with 0: -band over an enum yields a value, not a bool, and
     # relying on its truthiness is needlessly thin ice.
     $mods  = [System.Windows.Input.Keyboard]::Modifiers

@@ -1,5 +1,10 @@
 # Hangar
 
+[![CI](https://github.com/richardfaldyna-cell/hangar-launcher/actions/workflows/ci.yml/badge.svg)](https://github.com/richardfaldyna-cell/hangar-launcher/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Platform: Windows](https://img.shields.io/badge/platform-Windows-0078D6.svg)
+![PowerShell 7](https://img.shields.io/badge/PowerShell-7-5391FE.svg)
+
 > From "I want to work on project X" to a running `claude` in the right folder in
 > two seconds. Hangar knows every project in your workspace, ranks them by what you
 > are actually working on, and opens a Windows Terminal tab with Claude Code
@@ -211,6 +216,13 @@ its own.
 | `install-shortcuts.ps1` | creates/removes the desktop shortcuts |
 | `make-icon.ps1` | draws `img/hangar.ico` |
 | `md2html.ps1` | renders a Markdown document (such as this README) to a standalone HTML file |
+| `tests/` | Pester smoke tests (index, search, launch command), run by CI |
+
+## Contributing
+
+Bug reports and small pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md)
+and the [Code of Conduct](CODE_OF_CONDUCT.md). Report security issues privately as
+described in [SECURITY.md](SECURITY.md). Changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
