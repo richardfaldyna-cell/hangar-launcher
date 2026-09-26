@@ -43,6 +43,12 @@ BeforeAll {
     Import-HangarIndex -MaxAgeMinutes 99999
 }
 
+AfterAll {
+    # Git marks its object files read-only; on Windows that makes Pester's TestDrive
+    # cleanup fail with "Access to the path ... is denied".
+    Get-ChildItem $TestDrive -Recurse -Force -File | ForEach-Object { $_.Attributes = 'Normal' }
+}
+
 Describe 'Scripts' {
     It '<_> parses without errors' -ForEach @(Get-ChildItem (Join-Path (Split-Path $PSScriptRoot -Parent) '*.ps1') | ForEach-Object Name) {
         $errors = $null
