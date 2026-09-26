@@ -6,6 +6,10 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Czech README (`README.cs.md`).
+
 ## [1.0.0] - 2026-09-26
 
 ### Added

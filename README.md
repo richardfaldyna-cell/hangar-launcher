@@ -10,6 +10,8 @@
 > are actually working on, and opens a Windows Terminal tab with Claude Code
 > already running.
 
+> 🇨🇿 Česky: [README.cs.md](README.cs.md)
+
 A personal tool shared as is, with no warranty and no support. See [LICENSE](LICENSE).
 
 ![Hangar window](img/hangar-gui.png)
