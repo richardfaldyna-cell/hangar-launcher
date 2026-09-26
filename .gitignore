@@ -1,0 +1,5 @@
+# Machine specific — written by hangar-index.ps1 and by launching projects
+index.json
+history.json
+# Generated HTML twins of Markdown documents (md2html.ps1)
+*.html
