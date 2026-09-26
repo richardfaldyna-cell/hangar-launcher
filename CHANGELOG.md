@@ -9,6 +9,11 @@ All notable changes to this project are documented here. The format follows
 ### Added
 
 - Czech README (`README.cs.md`).
+- Dependabot keeps the GitHub Actions used by CI up to date.
+
+### Changed
+
+- CI pins `actions/checkout` to a commit SHA instead of a moving tag.
 
 ## [1.0.0] - 2026-09-26
 
